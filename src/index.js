@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import App from './react/App';
+// import Object from './review/Object';
 import Class from './review/Class';
 
 
