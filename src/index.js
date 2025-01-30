@@ -4,13 +4,28 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import App from './react/App';
 // import Object from './review/Object';
-import Class from './review/Class';
+// import Class from './review/Class';
+// import Function from './review/function/Function';
+// import UseState from './review/function/UseState';
+// import UseEffect from './review/function/UseEffect';
+// import Spread from './review/Spread';
+// import Menu from './review/Menu';
+// import App from './review/geme/App';
+// import LifeCycleExample from './review/lifecycleClass/LifeCycleExample';
+// import MyComponent from './review/lifecycleClass/Mount';
+// import MyComponent from './review/lifecycleClass/Update';
+// import MyComponent from './review/lifecycleClass/Unmount';
+// import TimerClass from './review/TimerClass';
+// import Mount from './review/lifecycleFuntion/Mount';
+// import Update from './review/lifecycleFuntion/Update';
+import Unmount from './review/lifecycleFuntion/Unmount';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Class />
+    <Unmount />
   </React.StrictMode>
 );
 
