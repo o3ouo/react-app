@@ -22,14 +22,17 @@ import reportWebVitals from './reportWebVitals';
 // import UseState from './review/reactHooks/UseState';
 // import UseEffect from './review/reactHooks/UseEffect';
 // import UseRef from './review/reactHooks/UseRef';
-import UseMemo from './review/reactHooks/UseMemo';
+// import UseMemo from './review/reactHooks/UseMemo';
+// import UseCallback from './review/reactHooks/UseCallback';
+// import CustomHook from './review/reactHooks/CustomHook';
+import Example from './review/reactHooks/Example';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UseMemo />
+    <Example />
   </React.StrictMode>
 );
 
