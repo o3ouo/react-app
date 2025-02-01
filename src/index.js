@@ -18,14 +18,18 @@ import reportWebVitals from './reportWebVitals';
 // import TimerClass from './review/TimerClass';
 // import Mount from './review/lifecycleFuntion/Mount';
 // import Update from './review/lifecycleFuntion/Update';
-import Unmount from './review/lifecycleFuntion/Unmount';
+// import Unmount from './review/lifecycleFuntion/Unmount';
+// import UseState from './review/reactHooks/UseState';
+// import UseEffect from './review/reactHooks/UseEffect';
+// import UseRef from './review/reactHooks/UseRef';
+import UseMemo from './review/reactHooks/UseMemo';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Unmount />
+    <UseMemo />
   </React.StrictMode>
 );
 
