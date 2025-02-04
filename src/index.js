@@ -30,15 +30,14 @@ import reportWebVitals from './reportWebVitals';
 // import Async from './review/api/Async';
 // import Axios from './review/api/Axios';
 // import API from './review/api/API';
-import App from './review/router/App';
-
-
+// import App from './review/router/App';
+import SearchPage from './review/SearchPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <SearchPage />
   </React.StrictMode>
 );
 
