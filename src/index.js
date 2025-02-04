@@ -25,14 +25,20 @@ import reportWebVitals from './reportWebVitals';
 // import UseMemo from './review/reactHooks/UseMemo';
 // import UseCallback from './review/reactHooks/UseCallback';
 // import CustomHook from './review/reactHooks/CustomHook';
-import Example from './review/reactHooks/Example';
+// import Example from './review/reactHooks/Example';
+// import Fetch from './review/api/Fetch';
+// import Async from './review/api/Async';
+// import Axios from './review/api/Axios';
+// import API from './review/api/API';
+import App from './review/router/App';
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Example />
+    <App />
   </React.StrictMode>
 );
 
