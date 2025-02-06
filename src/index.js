@@ -31,14 +31,20 @@ import reportWebVitals from './reportWebVitals';
 // import Axios from './review/api/Axios';
 // import API from './review/api/API';
 // import App from './review/router/App';
+import { BrowserRouter } from 'react-router-dom';
 import SearchPage from './review/SearchPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+
+  <BrowserRouter>
     <SearchPage />
-  </React.StrictMode>
+  </BrowserRouter>
+
+  // <React.StrictMode>
+  //   <SearchPage />
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
