@@ -33,31 +33,49 @@ import reportWebVitals from './reportWebVitals';
 // import App from './review/router/App';
 // import { BrowserRouter } from 'react-router-dom';
 // import SearchPage from './review/SearchPage';
-import { Provider } from "react-redux";
+// import { Provider } from "react-redux";
 // import store from "./review/redux/store/store";
 // import App from "./review/redux/App";
-import store from "./review/reduxShoppingCart/store/store";
-import App from "./review/reduxShoppingCart/App";
+// import store from "./review/reduxShoppingCart/store/store";
+// import App from "./review/reduxShoppingCart/App";
+// import store from "./review/createAsynThunk/store/store";
+// import App from './review/createAsynThunk/App';
+// import App from './review/reactQueryServer/App';
+import App from './review/react_query_router/App';
+import { QueryClient, QueryClientProvider } from "tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { BrowserRouter } from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// React Query 클라이언트 생성
+const queryClient = new QueryClient();
 root.render(
 
+  // 두 번씩 실행함 (test)
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
 
+  // Router 사용
   // <BrowserRouter>
   //   <SearchPage />
   // </BrowserRouter>
 
-  <Provider store={store}>
-    <App />
-  </Provider>
+  // Redux store 사용
+  // <Provider store={store}>
+  //   <App />
+  // </Provider>
+
+  // React Query, Router 사용
+  <QueryClientProvider client={queryClient}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+    <ReactQueryDevtools initialIsOpen={false} buttonPosition='bottom-right' />
+  </QueryClientProvider>
+
   
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

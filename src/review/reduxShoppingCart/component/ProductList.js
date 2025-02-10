@@ -15,7 +15,7 @@ function ProductList() {
   }
 
   return (
-    <div>
+    <div className="product" style={{ flexBasis: "60%" }}>
       <h2>Like Food List</h2>
       <ul className="list">
         {
