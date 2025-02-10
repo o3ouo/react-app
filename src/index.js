@@ -42,7 +42,7 @@ import reportWebVitals from './reportWebVitals';
 // import App from './review/createAsynThunk/App';
 // import App from './review/reactQueryServer/App';
 import App from './review/react_query_router/App';
-import { QueryClient, QueryClientProvider } from "tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { BrowserRouter } from "react-router-dom";
 
